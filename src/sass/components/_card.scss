@@ -1,0 +1,32 @@
+.card {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    width: 200px;
+    margin: 8px;
+    padding: 4px;
+    background-color: #fff;
+  
+    text-align: center;
+    a {
+      display: block;
+      img {
+        object-fit: cover;
+        width: 100%;
+      }
+      .card-content {
+          &:hover {
+              transform: translate(-2px);}
+        h1 {
+          font-size: $font-xl;
+          // color: #333;
+        }
+        p {
+          font-size: $font-sm;
+          line-height: $leading-base;
+          color: #666;
+        }
+      }
+    }
+  }
+  
+  //box-shadow: offset-x offset-y blur-radius spread-radius color;
+  
