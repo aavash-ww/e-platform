@@ -1,0 +1,52 @@
+//Poppins
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+//Amatic
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+//font-family
+$font-base: "Poppins";
+$font-logo: "Amatic SC", sans-serif;
+// $font-description: ""
+
+// Font weights
+$font-light: 300;
+$font-regular: 400;
+$font-bold: 700;
+
+//Font-Size
+$font-scale: (
+  h1: (2.5rem, 1.2),
+  h2: (2rem, 1.3),
+  h3: (1.75rem, 1.4),
+  h4: (1.5rem, 1.5),
+  h5: (1.25rem, 1.6),
+  h6: (1rem, 1.6),
+  body: (1rem, 1.5),
+  small: (0.875rem, 1.4)
+);
+
+
+@mixin apply-font-scale($element) {
+  $styles: map-get($font-scale, $element);  
+  font-size: nth($styles, 1);                
+  line-height: nth($styles, 2);              
+}
+
+
+h1 { @include apply-font-scale(h1); }
+h2 { @include apply-font-scale(h2); }
+h3 { @include apply-font-scale(h3); }
+h4 { @include apply-font-scale(h4); }
+h5 { @include apply-font-scale(h5); }
+h6 { @include apply-font-scale(h6); }
+
+body {
+  @include apply-font-scale(body);  
+}
+
+small {
+  @include apply-font-scale(small); 
+}
+
+

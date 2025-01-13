@@ -1,0 +1,23 @@
+
+
+/* Themes */
+$primary: #4551dd;
+$secondary: #f8b001;
+
+/* Colors */
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "black": #000000,
+  "white": #ffffff,
+  "gray": #807c7c,
+  "dark-gray": #2b2929,
+);
+
+
+
+/* Model Properties */
+$base-border-radius: 0.25rem;
+$base-margin: 0.25rem;
+$base-padding: 0.25rem;
+$shadow: (0, 2px, 4px, #0000001a);

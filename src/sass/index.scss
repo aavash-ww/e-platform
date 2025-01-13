@@ -1,14 +1,16 @@
+/* abstracts */
+@import "abstracts/variables";
+@import "abstracts/placeholder";
+@import "abstracts/media-queries";
 
-/* Variables */
-@import "variables";
+/* base */
+@import 'base/typography';
+@import 'base/reset';
+@import 'base/base';
 
-/* Universal */
-@import "base";
+/* layout */
+@import "layout/grid";
 
-@import "media-queries";
 
-/* Components*/
-@import "components/button";
-@import "components/navbar";
-@import "components/card"
-
+/* components */
+// @import "components"
