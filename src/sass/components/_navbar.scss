@@ -1,42 +1,100 @@
-
 %align-center {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar {
-    @extend %align-center;
-    justify-content: space-between;
-    padding: 0.5rem calc((100vw - 1200px) / 2);
-    max-width: 90%;
-    margin: 0 auto;
-  
-    &__links {
-      @extend %align-center;
-      list-style: none;
-      gap: 1rem;
-      padding: 0 1rem;
-  
-      @include tablet {
-          display: none;
-          
-      }
+  display: flex;
+  align-items: center;
+}
+
+// .navbar {
+//   @extend %align-center;
+//   justify-content: space-between;
+//   // padding: 0.5rem calc((100vw - 1200px) / 2);
+//   padding: 0.75rem 0;
+//   max-width: 90%;
+//   margin: 0 auto;
+
+//   &__logo a {
+//     font-family: $font-logo;
+//     font-weight: $font-extrabold;
+//     cursor: pointer;
+//     &:hover {
+//       color: $secondary;
+//     }
+//     @include md {
+//       font-size: 1.5rem;
+//       align-items: center;
+//     }
+//     @include sm {
+//       font-size: 1.15rem;
+//       line-height: 1.3;
+//     }
+//   }
+
+//   &__links {
+//     @extend %align-center;
+//     list-style: none;
+//     gap: 1.25rem;
+//     padding: 0 1rem;
+
+//     @include md {
+//       display: none;
+//     }
+//     li:hover {
+//       color: $secondary;
+//     }
+//   }
+
+//   &__burger-menu {
+//     width: 32px;
+//     height: 32px;
+//     display: none;
+//     cursor: pointer;
+
+//     img {
+//       width: 100%;
+//       height: 100%;
+//       object-fit: cover;
+//     }
+//     @include md {
+//       display: flex;
+//     }
+//     @include sm {
+//       width: 24px;
+//       height: 24px;
+//     }
+//   }
+// }
+
+.navbar {
+  @extend %align-center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+
+  &__logo {
+    font-family: $font-logo;
+    cursor: pointer;
+    @include sm {
+      font-size: 1.2rem;
     }
-  
-    &__burger-menu {
+  }
+
+  &__links {
+    @extend %align-center;
+    gap: 1.25rem;
+    @include md {display: none;}
+    li:hover {
+      color: $secondary;
+    }
+  }
+  &__burger-menu {
+    width: 28px;
+    height: 28px;
+    display: none;
+    cursor: pointer;
+    @include sm {
       width: 24px;
       height: 24px;
-      display: none;
-  
-      img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-      }
-      @include tablet {
-          display: flex;
-      }
-  
+    }
+    @include md {
+      display: flex;
     }
   }
-  
+}
