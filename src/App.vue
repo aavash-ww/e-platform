@@ -1,15 +1,21 @@
 <template>
-  <div>
-
-    <Homepage />
-  </div>
+  <Suspense>
+    <template #default>
+      <Homepage />
+    </template>
+    <template #fallback>
+      <h1>Loading....</h1>
+    </template>
+  </Suspense>
 </template>
 
 <script>
-import Homepage from './pages/Homepage.vue'
+
+import { defineAsyncComponent } from 'vue';
+
 export default {
   components: {
-    Homepage,
+    Homepage: defineAsyncComponent(() => import('./pages/Homepage.vue'))
   }
 }
 </script>
