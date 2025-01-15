@@ -1,5 +1,3 @@
-
-
 /* Themes */
 $primary: #4551dd;
 $secondary: #f8b001;
@@ -14,10 +12,13 @@ $colors: (
   "dark-gray": #2b2929,
 );
 
-
-
 /* Model Properties */
-$base-border-radius: 0.25rem;
+//border-radius
+$br-base: 0.75rem;
+$br-lg: 1rem;
+$br-xl: $br-base + 0.5;
+$br-xxl: $br-base * 2;
+
 $base-margin: 0.25rem;
 $base-padding: 0.25rem;
 $shadow: (0, 2px, 4px, #0000001a);

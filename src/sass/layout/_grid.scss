@@ -10,12 +10,14 @@ $grid-gap: (
 
 $justify-values: flex-start, flex-end, space-between, space-around, center;
 
+//justify-xxxx
 @each $val in $justify-values {
     .justify-#{$val} {
         justify-content: $val;
     }
 }
 
+// gap-x
 @each $key, $val in $grid-gap {
     .gap-#{$key} > * {
         padding: $val;
@@ -31,7 +33,7 @@ $justify-values: flex-start, flex-end, space-between, space-around, center;
 //layout
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 90%;
   margin: 0 auto;
   padding: 0 20px;
 }

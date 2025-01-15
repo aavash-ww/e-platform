@@ -3,6 +3,9 @@
 @import "abstracts/placeholder";
 @import "abstracts/media-queries";
 
+/* utilities */
+@import "utilities";
+
 /* base */
 @import 'base/typography';
 @import 'base/reset';
@@ -10,7 +13,10 @@
 
 /* layout */
 @import "layout/grid";
+@import "layout/navbar";
 
 
 /* components */
-// @import "components"
+
+/* sections */
+@import "sections/hero"
