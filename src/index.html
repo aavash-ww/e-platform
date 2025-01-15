@@ -3,24 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>W3 Web</title>
+    <link rel="stylesheet" href="/scss/compiler/index.css" />
   </head>
   <body>
     <!-- Navigation bar -->
-    <nav class="navbar">
-      <h1 class="navbar__logo">W3 Web Tech</h1>
-      <ul class="navbar__links">
-        <li>Home</li>
-        <li>About</li>
-        <li>Contacts</li>
-      </ul>
-      <div class="navbar__burger-menu">
-        <img src="assets/icons/burger-menu.svg" alt="menu-icon" />
-      </div>
-    </nav>
-    <main>
+    <header class="container">
+      <nav class="navbar">
+        <h2 class="navbar__logo text-gray">W3 Web</h2>
+        <ul class="navbar__links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+        <img
+          src="assets/icons/burger-menu.svg"
+          alt="menu-icon"
+          class="navbar__burger-menu"
+        />
+      </nav>
+    </header>
+
+    <main class="bg-primary">
       <!-- Hero Section -->
-      <section></section>
+      <section class="hero bg-primary">
+        <div class="hero__wrapper container">
+          <h1 class="hero__quote bg-primary text-white">Lessons & Practice</h1>
+          
+          <!-- Card  -->
+          <div class="hero__card-grid row ">
+           
+            <div class="hero-card bg-white ">
+              <div class="hero-card-icon ">
+                <img src="assets/icons/maths.svg" alt="">
+              </div>
+              <h3 class="text-primary">Maths</h3>
+            </div>
+            <div class="hero-card bg-white ">
+              <div class="hero-card-icon ">
+                <img src="assets/icons/maths.svg" alt="">
+              </div>
+              <h3 class="text-primary">Maths</h3>
+            </div>
+            <div class="hero-card bg-white ">
+              <div class="hero-card-icon ">
+                <img src="assets/icons/maths.svg" alt="">
+              </div>
+              <h3 class="text-primary">Maths</h3>
+            </div>
+            <div class="hero-card bg-white ">
+              <div class="hero-card-icon ">
+                <img src="assets/icons/maths.svg" alt="">
+              </div>
+              <h3 class="text-primary">Maths</h3>
+            </div>
+            <div class="hero-card bg-white ">
+              <div class="hero-card-icon ">
+                <img src="assets/icons/maths.svg" alt="">
+              </div>
+              <h3 class="text-primary">Maths</h3>
+            </div>
+            <div class="hero-card bg-white ">
+              <div class="hero-card-icon ">
+                <img src="assets/icons/maths.svg" alt="">
+              </div>
+              <h3 class="text-primary">Maths</h3>
+            </div>
+            
+            
+            
+          </div>
+        </div>
+      </section>
+      <section class="bg-primary">
+
+      </section>
     </main>
   </body>
 </html>
