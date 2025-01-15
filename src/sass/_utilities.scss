@@ -1,6 +1,13 @@
-
+//text color 
 @each $key, $val in $colors {
     .text-#{$key} {
         color: $val;
+    }
+}
+
+//bg -color 
+@each $key, $val in $colors {
+    .bg-#{$key} {
+        background-color: $val;
     }
 }
