@@ -1,18 +1,15 @@
-//Poppins
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
-
-//Amatic
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 //font-family
 $font-base: "Poppins";
-$font-logo: "Amatic SC", sans-serif;
+$font-logo: "Orbitron", sans-serif;
 // $font-description: ""
 
 // Font weights
 $font-light: 300;
 $font-regular: 400;
 $font-bold: 700;
+$font-extrabold: 900;
 
 //Font-Size
 $font-scale: (
@@ -50,3 +47,11 @@ small {
 }
 
 
+@media (max-width: 768px) {
+  h4 { 
+    @include apply-font-scale(h2); // Apply h3 font scale to h2 on medium screens
+  }
+  h3 {
+    @include apply-font-scale(h4); // Apply h4 font scale to h3 on medium screens
+  }
+}
