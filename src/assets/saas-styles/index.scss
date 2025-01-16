@@ -7,17 +7,19 @@
 @import "utilities";
 
 /* base */
-@import 'base/typography';
-@import 'base/reset';
-@import 'base/base';
+@import "base/typography";
+@import "base/reset";
+@import "base/base";
 
 /* layout */
 @import "layout/grid";
 @import "layout/navbar";
-
+@import "layout/footer";
 
 /* components */
+@import "components/partnercard";
+@import "components/herocard";
 
 /* sections */
-// @import "sections/hero";
-@import "sections/hero2";
+@import "homepage/hero";
+@import "homepage/partners";

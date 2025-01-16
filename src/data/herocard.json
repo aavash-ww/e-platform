@@ -1,0 +1,26 @@
+[
+  {
+    "icon": "/src/assets/icons/maths.svg",
+    "title": "Maths"
+  },
+  {
+    "icon": "/src/assets/icons/physics.svg",
+    "title": "Physics"
+  },
+  {
+    "icon": "/src/assets/icons/medicine.svg",
+    "title": "Medicine"
+  },
+  {
+    "icon": "/src/assets/icons/english.svg",
+    "title": "English"
+  },
+  {
+    "icon": "/src/assets/icons/technology.svg",
+    "title": "Technology"
+  },
+  {
+    "icon": "/src/assets/icons/engineering.svg",
+    "title": "Engineering"
+  }
+]

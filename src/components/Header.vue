@@ -1,6 +1,6 @@
 <template>
-   <header class="container">
-      <nav class="navbar">
+   <header class="top-header bg-white ">
+      <nav class="navbar container">
         <h2 class="navbar__logo text-gray">W3 Web</h2>
         <ul class="navbar__links">
           <li><a href="#">Home</a></li>

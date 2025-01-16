@@ -3,40 +3,47 @@
   align-items: center;
 }
 
-
-.navbar {
-  @extend %align-center;
-  justify-content: space-between;
-  padding: 0.75rem 0;
-
-  &__logo {
-    font-family: $font-logo;
-    cursor: pointer;
-    @include sm {
-      font-size: 1.2rem;
-    }
-  }
-
-  &__links {
+.top-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  .navbar {
     @extend %align-center;
-    gap: 1.25rem;
-    @include md {display: none;}
-    li:hover {
-      color: $secondary;
+    justify-content: space-between;
+    padding: 0.75rem ;
+   
+
+    &__logo {
+      font-family: $font-logo;
+      cursor: pointer;
+      @include sm {
+        font-size: 1.2rem;
+      }
     }
-  }
-  
-  &__burger-menu {
-    width: 28px;
-    height: 28px;
-    display: none;
-    cursor: pointer;
-    @include sm {
-      width: 24px;
-      height: 24px;
+
+    &__links {
+      @extend %align-center;
+      gap: 1.25rem;
+      @include md {
+        display: none;
+      }
+      li:hover {
+        color: $secondary;
+      }
     }
-    @include md {
-      display: flex;
+
+    &__burger-menu {
+      width: 28px;
+      height: 28px;
+      display: none;
+      cursor: pointer;
+      @include sm {
+        width: 24px;
+        height: 24px;
+      }
+      @include md {
+        display: flex;
+      }
     }
   }
 }
