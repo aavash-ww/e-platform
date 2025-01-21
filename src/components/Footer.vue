@@ -24,16 +24,15 @@
                     </ul>
                 </div>
                 <!-- Contact  -->
+               
                 <div v-for="(item, index) in contact" :key="index" class="contact">
                     <h5>{{ item.title }}</h5>
-                    <div class="icon-wrapper">
-                        <ul>
-                            <li v-for="li in item.list" :key="li">{{ li }}</li>
-                        </ul>
-                    </div>
-
-
+                    <ul v-for="li in item.list" :key="li">
+                        <li>{{ li }}</li>
+                    </ul>
                 </div>
+
+                
             </div>
             <!-- Copyright  -->
             <div class="copyright text-gray">

@@ -3,3 +3,19 @@
     align-items: center;
     justify-content: center;
 }
+
+%button {
+    text-align: center;
+    border-radius: 1.5rem;
+    border: none;
+    padding: 8px 20px;
+    font-weight: 500;
+    font-size: large;
+    color: white;
+    cursor: pointer;
+    background-color: $primary;
+    &:hover {
+        color: $primary;
+        background-color: $secondary;
+    }
+}

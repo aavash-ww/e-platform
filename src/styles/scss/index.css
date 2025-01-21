@@ -3,10 +3,26 @@
 /* Colors */
 /* Model Properties */
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-.profile-container .profile-main .profile-wrapper .first-profile .icon, .profile-container .profile-main .profile-wrapper .first-profile .image, .hero-card .hero-card-icon, .hero-card {
+.profile-container .profile-main .profile-wrapper .profile .icon, .profile-container .profile-main .profile-wrapper .profile .image, .hero-card .hero-card-icon, .hero-card {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.contact-main-wrapper .contact-main .form-container form .form-group button, .top-header .navbar__links .signup {
+  text-align: center;
+  border-radius: 1.5rem;
+  border: none;
+  padding: 8px 20px;
+  font-weight: 500;
+  font-size: large;
+  color: white;
+  cursor: pointer;
+  background-color: #4551dd;
+}
+.contact-main-wrapper .contact-main .form-container form .form-group button:hover, .top-header .navbar__links .signup:hover {
+  color: #4551dd;
+  background-color: #f8b001;
 }
 
 /* utilities */
@@ -124,8 +140,9 @@ input[type=text],
 input[type=email],
 input[type=password],
 textarea {
-  border-radius: 0.2rem;
+  border-radius: 0.5rem;
   border: none;
+  padding: 0.5rem;
   border-bottom: 2px solid gray;
 }
 input[type=text]:focus,
@@ -401,7 +418,7 @@ textarea:focus {
     width: 100%;
   }
 }
-.top-header .navbar__links, .top-header .navbar {
+.top-header .navbar__links .links, .top-header .navbar {
   display: flex;
   align-items: center;
 }
@@ -416,15 +433,22 @@ textarea:focus {
   padding: 0.75rem;
 }
 .top-header .navbar__links {
-  gap: 1.25rem;
+  display: flex;
+  gap: 1rem;
 }
 @media screen and (max-width: 768px) {
   .top-header .navbar__links {
     display: none;
   }
 }
-.top-header .navbar__links li:hover {
+.top-header .navbar__links .links {
+  gap: 1.25rem;
+}
+.top-header .navbar__links .links li:hover {
   color: #f8b001;
+}
+.top-header .navbar__links .signup {
+  border-radius: 0.5rem;
 }
 .top-header .navbar__burger-menu {
   width: 28px;
@@ -769,44 +793,44 @@ textarea:focus {
 .profile-container {
   margin-top: 1.5rem;
 }
-.profile-container .profile-main .profile-wrapper .first-profile {
+.profile-container .profile-main .profile-wrapper .profile {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-bottom: 2rem;
 }
 @media screen and (max-width: 768px) {
-  .profile-container .profile-main .profile-wrapper .first-profile {
+  .profile-container .profile-main .profile-wrapper .profile {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (max-width: 460px) {
-  .profile-container .profile-main .profile-wrapper .first-profile {
+  .profile-container .profile-main .profile-wrapper .profile {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-.profile-container .profile-main .profile-wrapper .first-profile .text {
+.profile-container .profile-main .profile-wrapper .profile .text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: right;
 }
-.profile-container .profile-main .profile-wrapper .first-profile .text h5 {
+.profile-container .profile-main .profile-wrapper .profile .text h5 {
   color: #4551dd;
 }
-.profile-container .profile-main .profile-wrapper .first-profile .text p {
+.profile-container .profile-main .profile-wrapper .profile .text p {
   color: #575555;
   font-size: 0.9rem;
 }
-.profile-container .profile-main .profile-wrapper .first-profile .image img {
-  width: 100%;
-  height: 100%;
+.profile-container .profile-main .profile-wrapper .profile .image img {
+  width: 80%;
+  height: 90%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
   border: 8px solid #f8b001;
 }
-.profile-container .profile-main .profile-wrapper .first-profile .icon img {
+.profile-container .profile-main .profile-wrapper .profile .icon img {
   width: 120px;
   height: auto;
 }
@@ -859,17 +883,45 @@ textarea:focus {
 
 .contact-main-wrapper {
   display: flex;
+  min-height: 90vh;
   justify-content: center;
   align-items: center;
+  background-image: url("/src/assets/images/contact.jpg");
+  background-position: top center;
+  background-size: cover;
 }
 .contact-main-wrapper .contact-main {
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(10px);
+  background: rgba(172, 166, 166, 0.15);
+  padding: 2rem 4rem;
+  height: 50%;
   display: flex;
-  gap: 3rem;
+  border-radius: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .contact-main-wrapper .contact-main {
+    flex-wrap: wrap;
+  }
 }
 .contact-main-wrapper .contact-main .contact-left {
   flex: 1;
-  padding-right: 2rem;
 }
-.contact-main-wrapper .contact-main .form-container .form-group {
+.contact-main-wrapper .contact-main .contact-left h1 {
+  margin-bottom: 1rem;
+}
+.contact-main-wrapper .contact-main .contact-left p {
+  margin-top: 1rem;
+  margin-right: 8rem;
+}
+@media screen and (max-width: 768px) {
+  .contact-main-wrapper .contact-main .contact-left {
+    margin-bottom: 2rem;
+  }
+}
+.contact-main-wrapper .contact-main .form-container form {
+  flex: 1;
+}
+.contact-main-wrapper .contact-main .form-container form .form-group {
   margin-bottom: 1rem;
 }/*# sourceMappingURL=index.css.map */

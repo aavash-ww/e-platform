@@ -15,8 +15,9 @@ ul {
  input[type="email"],
  input[type="password"],
  textarea {
-  border-radius: 0.2rem;
+  border-radius: 0.5rem;
   border: none;
+  padding: 0.5rem;
   border-bottom: 2px solid gray;
   &:focus{
     border: none;

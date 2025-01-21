@@ -23,11 +23,11 @@ export default {
     data() {
         return {
             images: [
-                "/src/assets/images/columnimage.avif",
                 "/src/assets/images/final.jpg",
-                "/src/assets/images/partnercard1.jpeg",
-                "/src/assets/images/partnercard2.jpeg",
-                "/src/assets/images/partnercard3.jpeg",
+                "/src/assets/images/slider1.jpg",
+                "/src/assets/images/slider2.jpg",
+                "/src/assets/images/slider3.jpg",
+                "/src/assets/images/slider4.jpg",
 
             ],
             currentIndex: 0,

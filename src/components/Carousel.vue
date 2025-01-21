@@ -30,12 +30,12 @@ export default {
                     description: "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. "
                 },
                 {
-                    image: "/src/assets/images/partnercard1.jpeg",
-                    title: "Art School Australia",
+                    image: "/src/assets/images/partnercard2.jpeg",
+                    title: "University of London",
                     description: "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. "
                 },
                 {
-                    image: "/src/assets/images/partnercard1.jpeg",
+                    image: "/src/assets/images/avatarimg4.jpg",
                     title: "Art School Australia",
                     description: "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. "
                 },

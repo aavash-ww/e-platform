@@ -1,22 +1,30 @@
 <template>
+  <div>
+    <Layout>
+
+      <Suspense>
+        <template #default>
+          <router-view />
+        </template>
+        <template #fallback>
+          <h1>Loading....</h1>
+        </template>
+      </Suspense>
+      
+
+    </Layout>
    
-  <Suspense>
-    <template #default>
-      <Homepage />
-    </template>
-    <template #fallback>
-      <h1>Loading....</h1>
-    </template>
-  </Suspense>
+  </div>
+
 </template>
 
 <script>
 
-import { defineAsyncComponent } from 'vue';
+import Layout from './Layout.vue';
 export default {
   name: "App",
   components: {
-    Homepage: defineAsyncComponent(() => import('./pages/Homepage.vue')),
+    Layout,
 
   }
 }

@@ -75,7 +75,6 @@
 
 <script>
 import Herocard from '../components/cards/Herocard.vue';
-// import Layout from '../Layout.vue';
 import Header from '../components/Header.vue';
 import Slider from '../components/Slider.vue';
 import Carousel from '../components/Carousel.vue';

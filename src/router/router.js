@@ -1,23 +1,37 @@
-import { createRouter, createMemoryHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
+import { defineAsyncComponent } from "vue";
 
-import Homepage from "../pages/Homepage.vue";
-import Contact from "../pages/Contact.vue";
 
 const routes = [
   {
     path: "/",
-    component: Homepage,
+    component: defineAsyncComponent(() => import('../pages/Homepage.vue')) ,
     name: "Homepage",
   },
   {
     path: "/contact",
-    component: Contact,
+    component: defineAsyncComponent(() => import('../pages/Contact.vue')),
     name: "Contact",
+  },
+  {
+    path: "/about",
+    component: defineAsyncComponent(() => import('../pages/About.vue')),
+    name: "About",
+  },
+  {
+    path: "/register",
+    component: defineAsyncComponent(() => import('../pages/Register.vue')),
+    name: "Register",
+  },
+  {
+    path: "/login",
+    component: defineAsyncComponent(() => import('../pages/Login.vue')),
+    name: "Login",
   },
 ];
 
 const router = createRouter({
-  history: createMemoryHistory(),
+  history: createWebHistory(),
   routes,
 });
 

@@ -2,7 +2,7 @@
   margin-top: 1.5rem;
   .profile-main {
     .profile-wrapper {
-      .first-profile {
+      .profile {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         @include md {
@@ -31,8 +31,8 @@
         .image {
           @extend %content-center;
           img {
-            width: 100%;
-            height: 100%;
+            width: 80%;
+            height: 90%;
             object-fit: cover;
             border-radius: 50%;
             border: 8px solid $secondary;

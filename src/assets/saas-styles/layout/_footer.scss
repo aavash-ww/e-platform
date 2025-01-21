@@ -12,17 +12,17 @@
       @include sm {
         grid-template-columns: repeat(1, 1fr);
       }
-      h5{
+
+      h5 {
         font-size: 1.5rem;
       }
       li {
         font-size: 0.9rem;
       }
-        
     }
     .copyright {
-        text-align: center;
-        border-top: 1px solid gray;
+      text-align: center;
+      border-top: 1px solid gray;
     }
   }
 }
