@@ -7,3 +7,19 @@ ul {
   padding: 0;
   list-style: none;
 }
+ label {
+  display: block;
+ }
+
+ input[type="text"],
+ input[type="email"],
+ input[type="password"],
+ textarea {
+  border-radius: 0.2rem;
+  border: none;
+  border-bottom: 2px solid gray;
+  &:focus{
+    border: none;
+    border-bottom: 2px solid $primary;
+  }
+ }

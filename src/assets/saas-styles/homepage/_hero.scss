@@ -7,64 +7,30 @@
     height: calc(100vh + 400px);
   }
   @include sm {
-    height: calc(100vh + 880px);
+    height: calc(100vh + 950px);
   }
 
-  &__wrapper {
-    background-image: url("/src/assets/images/final.jpg");
-    background-size: cover;
-    background-position: top;
-    @include sm { 
-      background-position: center;
+  .hero-quote {
+    text-align: center;
+    border-radius: 0.75rem;
+    max-width: 500px;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    @include sm {
+      font-size: 1.75rem;
     }
-    height: 100vh;
-    border-radius: $br-base;
+  }
 
-    .hero-content {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      top: 25%;
-      right: 0;
-      @include md {top: 50%;}
-      width: 55%;
-
-      @include breakpoint(900px) {
-        width: 70%;
-      }
-      @include md {
-        width: 80%;
-      }
-      @include sm {
-        width: 100%;
-      }
-
-      .hero-quote {
-        text-align: center;
-        border-radius: 0.75rem;
-        max-width: 500px;
-        padding: 2rem 1rem;
-        margin-bottom: 2rem;
-        @include sm {
-          font-size: 1.75rem;
-        }
-      }
-
-      .hero-card-grid {
-        width: 100%;
-        display: grid;
-
-        margin: 0 auto;
-        grid-template-columns: repeat(3, 1fr);
-        @include md {
-          grid-template-columns: repeat(2, 1fr);
-        }
-        @include sm {
-          grid-template-columns: 1fr;
-        }
-        gap: 1rem;
-      }
+  .hero-card-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    @include md {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include sm {
+      grid-template-columns: 1fr;
     }
   }
 }
-

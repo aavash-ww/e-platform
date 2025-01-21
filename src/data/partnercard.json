@@ -1,17 +1,62 @@
 [
-  {
-    "image": "/src/assets/images/partnercard1.jpeg",
-    "title": "Art School Australia",
-    "description": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. "
-  },
-  {
-    "image": "/src/assets/images/partnercard2.jpeg",
-    "title": "English in Argentina",
-    "description": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. "
-  },
-  {
-    "image": "/src/assets/images/partnercard3.jpeg",
-    "title": "Engineering",
-    "description": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. "
-  }
+  [
+    {
+      "id": "1",
+      "image": "/src/assets/images/partnercard1.jpeg",
+      "title": "Art School Australia",
+      "description": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+    },
+    {
+      "id": "2",
+      "image": "/src/assets/images/partnercard2.jpeg",
+      "title": "English in Argentina",
+      "description": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+    },
+    {
+      "id": "3",
+      "image": "/src/assets/images/partnercard3.jpeg",
+      "title": "Engineering",
+      "description": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+    }
+  ],
+  [
+    {
+      "id": "4",
+      "image": "/src/assets/images/partnercard1.jpeg",
+      "title": "Art School Australia",
+      "description": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+    },
+    {
+      "id": "5",
+      "image": "/src/assets/images/partnercard2.jpeg",
+      "title": "English in Argentina",
+      "description": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+    },
+    {
+      "id": "6",
+      "image": "/src/assets/images/partnercard3.jpeg",
+      "title": "Engineering",
+      "description": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+    }
+  ],
+  [
+    {
+      "id": "7",
+      "image": "/src/assets/images/partnercard1.jpeg",
+      "title": "Art School Australia",
+      "description": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+    },
+    {
+      "id": "8",
+      "image": "/src/assets/images/partnercard2.jpeg",
+      "title": "English in Argentina",
+      "description": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+    },
+    {
+      "id": "9",
+      "image": "/src/assets/images/partnercard3.jpeg",
+      "title": "Engineering",
+      "description": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+    }
+  ]
 ]

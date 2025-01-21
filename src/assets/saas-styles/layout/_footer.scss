@@ -1,3 +1,28 @@
-.footer {
-    text-align: center;
+.footer-section {
+  .footer-wrapper {
+    padding: 1.5rem 0;
+    .footer-grid {
+      display: grid;
+      margin-bottom: 1rem;
+      gap: 2rem;
+      grid-template-columns: repeat(4, 1fr);
+      @include md {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include sm {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      h5{
+        font-size: 1.5rem;
+      }
+      li {
+        font-size: 0.9rem;
+      }
+        
+    }
+    .copyright {
+        text-align: center;
+        border-top: 1px solid gray;
+    }
+  }
 }

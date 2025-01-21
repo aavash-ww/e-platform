@@ -1,0 +1,36 @@
+{
+  "company": [
+    {
+      "title": "Company",
+      "list": [" About Us", " Why Us", "Security", "Partnership"]
+    }
+  ],
+  "categories": [
+    {
+      "title": "Categories",
+      "list": [
+        " Online Classes",
+        " Physical Classes",
+        "Mentorship",
+        "Internship"
+      ]
+    }
+  ],
+  "help": [
+    {
+      "title": "Help",
+      "list": [
+        " Account",
+        "Support Center",
+        " Privacy Policy",
+        "Terms & Conditions"
+      ]
+    }
+  ],
+  "contact": [
+    {
+      "title": "Contact Us",
+      "list": [" +977 9863788334", "aavash@gmail.com", " Tamghas, Gulmi"]
+    }
+  ]
+}

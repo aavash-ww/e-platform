@@ -1,0 +1,51 @@
+.profile-container {
+  margin-top: 1.5rem;
+  .profile-main {
+    .profile-wrapper {
+      .first-profile {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        @include md {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        @include sm {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        gap: 2rem;
+        margin-bottom: 2rem;
+
+        .text {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          text-align: right;
+          h5 {
+            color: $primary;
+          }
+          p {
+            color: #575555;
+            font-size: 0.9rem;
+          }
+        }
+        .image {
+          @extend %content-center;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 8px solid $secondary;
+          }
+        }
+        .icon {
+          @extend %content-center;
+          img {
+            width: 120px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}

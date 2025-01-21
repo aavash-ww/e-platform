@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Quality Education",
+    "description": "Lorem ipsum dolor sit amet consectetur ",
+    "icon": "/src/assets/icons/missionicon1.svg"
+  },
+  {
+    "title": "Variety Courses",
+    "description": "Lorem ipsum dolor sit amet consectetur ",
+    "icon": "/src/assets/icons/missionicon2.svg"
+  },
+  {
+    "title": "Flexible Learning ",
+    "description": "Lorem ipsum dolor sit amet consectetur ",
+    "icon": "/src/assets/icons/missionicon3.svg"
+  },
+  {
+    "title": "Online Classess",
+    "description": "Lorem ipsum dolor sit amet consectetur ",
+    "icon": "/src/assets/icons/missionicon4.svg"
+  }
+]

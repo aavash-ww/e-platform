@@ -1,0 +1,21 @@
+.contact-main-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .contact-main {
+        display: flex;
+        gap: 3rem;
+
+        .contact-left {
+            flex: 1;
+            padding-right: 2rem;
+        }
+        .form-container {
+            .form-group {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    
+}

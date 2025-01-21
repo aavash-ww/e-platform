@@ -1,0 +1,57 @@
+.slider-container {
+  position: relative;
+  background-size: cover;
+  background-position: top;
+  padding: 0 12px;
+  @include sm {
+    background-position: center;
+  }
+  height: 100vh;
+  border-radius: $br-base;
+
+  .slider-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    left: 1%;
+    width: 60%;
+    @include breakpoint(900px) {
+      width: 70%;
+    }
+    @include md {
+      top: 50%;
+    }
+    @include sm {
+      bottom: 0%;
+      left: 0;
+    }
+
+    @include md {
+      width: 80%;
+    }
+    @include sm {
+      width: 100%;
+    }
+  }
+  .button-container {
+    display: flex;
+    margin: 0 auto;
+    gap: 0.5rem;
+    .slider-btn.active {
+      background-color: $primary;
+    }
+    .slider-btn:hover {
+      background-color: $primary;
+      cursor: pointer;
+    }
+    .slider-btn {
+      border-radius: 50%;
+      height: 8px;
+      width: 8px;
+      margin-top: 0.75rem;
+      border: none;
+      background-color: gray;
+    }
+  }
+}

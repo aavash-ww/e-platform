@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Aavash Thapa",
+    "description": "While we were not the first home cleaning company in the UK, we take pride in being market leaders in introducing an instant online booking system plus the facility for our customers to login.",
+    "icon": "/src/assets/icons/twittericon.svg",
+    "image": "/src/assets/images/avatarimg4.jpg"
+  },
+  {
+    "title": "Aditya Thapa",
+    "description": "While we were not the first home cleaning company in the UK, we take pride in being market leaders in introducing an instant online booking.",
+    "icon": "/src/assets/icons/twittericon.svg",
+    "image": "/src/assets/images/avatarimg4.jpg"
+  },
+  {
+    "title": "Avishek Thapa",
+    "description": "While we were not the first home cleaning company in the UK, we take pride in being market leaders in introducing an instant online booking system plus the facility for our customers to login.",
+    "icon": "/src/assets/icons/twittericon.svg",
+    "image": "/src/assets/images/avatarimg4.jpg"
+  }
+]

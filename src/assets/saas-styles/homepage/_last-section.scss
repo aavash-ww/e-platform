@@ -1,0 +1,51 @@
+.last-section {
+  .last-wrapper {
+    padding: 1rem 2rem ;
+
+    .image-part {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      .quotation {
+        img {
+          width: 60px;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+      .girl-image {
+        z-index: 200;
+        img {
+          width: 150px;
+          height: 150px;
+          object-fit: cover;
+          border-radius: 50%;
+          object-fit: cover;
+         
+        }
+      }
+    }
+
+    .description {
+        border-radius: 1rem;
+        position: relative;
+        top: -4rem;
+        z-index: 100;
+        p{
+            text-align: center;
+            color: $primary;
+            padding: 8rem 2rem 2rem 2rem;
+            font-size: 2rem;
+            font-weight: 700;
+            
+        }
+    }
+    p {
+        color: white;
+        text-align: center;
+        font-weight: 600;
+    }
+  }
+}

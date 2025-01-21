@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Header />
+        <router-view/>
         <main>
             <slot />
         </main>

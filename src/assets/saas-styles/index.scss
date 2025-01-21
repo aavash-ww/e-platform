@@ -1,7 +1,7 @@
 /* abstracts */
 @import "abstracts/variables";
-@import "abstracts/placeholder";
 @import "abstracts/media-queries";
+@import "abstracts/placeholder";
 
 /* utilities */
 @import "utilities";
@@ -17,9 +17,18 @@
 @import "layout/footer";
 
 /* components */
-@import "components/partnercard";
 @import "components/herocard";
+@import "components/slider";
+@import "components/carousel";
+
 
 /* sections */
 @import "homepage/hero";
 @import "homepage/partners";
+@import "homepage/mission";
+@import "homepage/profiles";
+@import "homepage/last-section";
+
+// pages 
+@import "pages/contact";
+
